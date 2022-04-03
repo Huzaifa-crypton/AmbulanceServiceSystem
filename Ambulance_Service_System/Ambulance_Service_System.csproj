@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C61AB9A9-CB03-4827-887D-29C7B14273BD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Ambulance_Service_System</RootNamespace>
+    <AssemblyName>Ambulance_Service_System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Licensing, Version=3.2.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b" />
+    <Reference Include="Bunifu.UI.WinForms.1.5.3">
+      <HintPath>obj\BunifuCrack-main\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>obj\BunifuCrack-main\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCheckBox">
+      <HintPath>obj\BunifuCrack-main\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCircleProgress">
+      <HintPath>obj\BunifuCrack-main\Bunifu.UI.WinForms.BunifuCircleProgress.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
+      <HintPath>obj\BunifuCrack-main\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
+      <HintPath>obj\BunifuCrack-main\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuImageButton">
+      <HintPath>obj\BunifuCrack-main\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>obj\BunifuCrack-main\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPages">
+      <HintPath>obj\BunifuCrack-main\Bunifu.UI.WinForms.BunifuPages.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPanel">
+      <HintPath>obj\BunifuCrack-main\Bunifu.UI.WinForms.BunifuPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
+      <HintPath>obj\BunifuCrack-main\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuShadowPanel">
+      <HintPath>obj\BunifuCrack-main\Bunifu.UI.WinForms.BunifuShadowPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
+      <HintPath>obj\BunifuCrack-main\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>obj\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>obj\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ambulance.cs" />
+    <Compile Include="BST.cs" />
+    <Compile Include="BSTTypes.cs" />
+    <Compile Include="City.cs" />
+    <Compile Include="ECF.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="InCharge.cs" />
+    <Compile Include="LinkedList.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPasswordForm.Designer.cs">
+      <DependentUpon>ForgotPasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NodeBST.cs" />
+    <Compile Include="NodeLinkedList.cs" />
+    <Compile Include="NodeStack.cs" />
+    <Compile Include="SignUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUpForm.Designer.cs">
+      <DependentUpon>SignUpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stack.cs" />
+    <Compile Include="Station.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WOForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WOForm.Designer.cs">
+      <DependentUpon>WOForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CTWOForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CTWOForm.Designer.cs">
+      <DependentUpon>CTWOForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InChargeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InChargeForm.Designer.cs">
+      <DependentUpon>InChargeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="InChargeForm.resx">
+      <DependentUpon>InChargeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPasswordForm.resx">
+      <DependentUpon>ForgotPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUpForm.resx">
+      <DependentUpon>SignUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WOForm.resx">
+      <DependentUpon>WOForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CTWOForm.resx">
+      <DependentUpon>CTWOForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\bullet-list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\call-center-operator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\condo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\key_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\large logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\medium logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\parking_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\phone-call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\phone-receiver-silhouette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\power-off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\sign-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\small logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\synchronize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\undraw_doctors_hwty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\undraw_Forgot_password_re_hxwm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\undraw_Login_re_4vu2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\undraw_male_avatar_323b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\undraw_medical_care_movn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\undraw_medicine_b1ol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\undraw_Online_cv_re_gn0a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\undraw_reviews_lp8w.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\user.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
